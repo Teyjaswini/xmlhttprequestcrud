@@ -147,7 +147,7 @@ function onEdit(ele) {
 
     let xhr = new XMLHttpRequest()
 
-    xhr.open('EDIT', EDIT_URL, true)
+    xhr.open('GET', EDIT_URL, true)
 
     xhr.send(null)
 
@@ -249,4 +249,5 @@ function onRemove(ele) {
 
 postForm.addEventListener('submit', onPostSubmit)
 updatePostBtn.addEventListener('click', onPostUpdate)
+
 
